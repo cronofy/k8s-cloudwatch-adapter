@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"testing"
 
-	api "github.com/awslabs/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/metriccache"
+	api "github.com/cronofy/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/metriccache"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/client/clientset/versioned/fake"
-	informers "github.com/awslabs/k8s-cloudwatch-adapter/pkg/client/informers/externalversions"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/client/clientset/versioned/fake"
+	informers "github.com/cronofy/k8s-cloudwatch-adapter/pkg/client/informers/externalversions"
 )
 
 func getExternalKey(externalMetric *api.ExternalMetric) namespacedQueueItem {

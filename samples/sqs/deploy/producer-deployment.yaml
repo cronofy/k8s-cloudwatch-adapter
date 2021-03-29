@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: sqs-producer
-        image: chankh/sqs-producer-sample
+        image: cronofy/sqs-producer-sample

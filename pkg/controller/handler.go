@@ -3,8 +3,8 @@ package controller
 import (
 	"fmt"
 
-	listers "github.com/awslabs/k8s-cloudwatch-adapter/pkg/client/listers/metrics/v1alpha1"
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/metriccache"
+	listers "github.com/cronofy/k8s-cloudwatch-adapter/pkg/client/listers/metrics/v1alpha1"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/metriccache"
 
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/util/runtime"

@@ -5,6 +5,6 @@ build:
 clean:
 	go clean && rm -rf ./bin
 consumer-container:
-	docker build -t chankh/sqs-consumer-sample ./consumer
+	docker build -t cronofy/sqs-consumer-sample ./consumer
 producer-container:
-	docker build -t chankh/sqs-producer-sample ./producer
+	docker build -t cronofy/sqs-producer-sample ./producer

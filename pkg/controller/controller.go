@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
-	informers "github.com/awslabs/k8s-cloudwatch-adapter/pkg/client/informers/externalversions/metrics/v1alpha1"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
+	informers "github.com/cronofy/k8s-cloudwatch-adapter/pkg/client/informers/externalversions/metrics/v1alpha1"
 	"k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/tools/cache"

@@ -6,7 +6,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	"github.com/aws/aws-sdk-go/aws"
-	api "github.com/awslabs/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
+	api "github.com/cronofy/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
 )
 
 func TestToCloudWatchQuery(t *testing.T) {
