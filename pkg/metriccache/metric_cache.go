@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
 
 	"k8s.io/klog"
 )

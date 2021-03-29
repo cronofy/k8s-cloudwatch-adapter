@@ -6,8 +6,8 @@ import (
 	apimeta "k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/client-go/dynamic"
 
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/aws"
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/metriccache"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/aws"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/metriccache"
 	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
 )
 

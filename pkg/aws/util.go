@@ -6,7 +6,7 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
 
 	"k8s.io/klog"
 )
@@ -18,8 +18,13 @@ func GetLocalRegion() string {
 		klog.Errorf("unable to get current region information, %v", err)
 		return ""
 	}
-
 	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		klog.Errorf("unable to get current region information, status code %v", resp.StatusCode)
+		return ""
+	}
+
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		klog.Errorf("cannot read response from instance metadata, %v", err)

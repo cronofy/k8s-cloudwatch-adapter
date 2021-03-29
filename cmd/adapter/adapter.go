@@ -9,12 +9,12 @@ import (
 	"k8s.io/component-base/logs"
 	"k8s.io/klog"
 
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/aws"
-	clientset "github.com/awslabs/k8s-cloudwatch-adapter/pkg/client/clientset/versioned"
-	informers "github.com/awslabs/k8s-cloudwatch-adapter/pkg/client/informers/externalversions"
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/controller"
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/metriccache"
-	cwprov "github.com/awslabs/k8s-cloudwatch-adapter/pkg/provider"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/aws"
+	clientset "github.com/cronofy/k8s-cloudwatch-adapter/pkg/client/clientset/versioned"
+	informers "github.com/cronofy/k8s-cloudwatch-adapter/pkg/client/informers/externalversions"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/controller"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/metriccache"
+	cwprov "github.com/cronofy/k8s-cloudwatch-adapter/pkg/provider"
 	basecmd "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/cmd"
 	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
 )

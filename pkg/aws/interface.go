@@ -2,7 +2,7 @@ package aws
 
 import (
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
-	"github.com/awslabs/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
+	"github.com/cronofy/k8s-cloudwatch-adapter/pkg/apis/metrics/v1alpha1"
 )
 
 // CloudWatchManager manages clients for Amazon CloudWatch.
